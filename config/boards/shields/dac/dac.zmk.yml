@@ -1,0 +1,12 @@
+file_format: "1"
+id: dac 
+name: dactyl 
+type: shield
+url: https://github.com/ukimalla/zmk-dactyl_manuform 
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - dac_left
+  - dac_right

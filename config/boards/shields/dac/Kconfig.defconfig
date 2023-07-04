@@ -1,0 +1,27 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_DAC_LEFT
+
+	config ZMK_KEYBOARD_NAME
+	    default "DAC_LEFT"
+
+	config ZMK_SPLIT_ROLE_CENTRAL
+	    default y
+
+endif
+
+if SHIELD_DAC_LEFT
+
+	config ZMK_KEYBOARD_NAME
+	    default "DAC_RIGHT"
+
+endif
+
+
+if SHIELD_DAC_LEFT || SHIELD_DAC_RIGHT
+
+	config ZMK_SPLIT
+	    default y
+
+endif
